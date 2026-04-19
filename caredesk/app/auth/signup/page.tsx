@@ -87,7 +87,6 @@ function SignupForm() {
               className="w-full bg-[#0a0a0a] border border-white/[0.08] rounded-lg px-4 py-3 text-white focus:outline-none focus:ring-2 focus:ring-teal-500/50 mb-4">
               <option value="patient">Patient</option>
               <option value="doctor">Doctor</option>
-              <option value="admin">Admin</option>
             </select>
             <label className="text-sm font-medium text-gray-300 mb-1.5 block">Password</label>
             <input type="password" value={form.password} onChange={e => setForm({...form, password: e.target.value})} required minLength={8} placeholder="Min 8 characters"
